@@ -1,9 +1,24 @@
 
 <div fxLayout="column" class="outerlayout">
-  <div  fxLayout="row" class="app-icon" fxFlex="10" fxLayoutAlign="start center">
-        <md-button>
-            <img class="png-icon"  src="./assests/ipl-logo.png" >
-        </md-button>
-   
+    <div fxFill="10" class="headding">  
+      <div fxLayout="row" fxLayoutAlign="start center"  class="image-icon"> 
+          <button mat-stroked-button>
+              <img src="assets/img/ipl-logo.png" height="50px" width="150px">
+          </button>
+      </div>
+      <div class="filters" fxLayout="row" fxLayoutAlign="end center">
+          <div class="seasons filter">
+            <mat-form-field appearance="fill">
+              <mat-label>select a season</mat-label>
+               <mat-select [(value)]="Season">     
+                    <mat-option>None</mat-option>
+                    <mat-option value="1">Option 1</mat-option>
+                    <mat-option value="2">Option 2</mat-option>
+                    <mat-option value="3">Option 3</mat-option>
+              </mat-select>
+            </mat-form-field>
+          </div>
+          <p>You selected: {{Season}}</p>
+      </div>
     </div>
 </div>

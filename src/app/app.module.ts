@@ -109,8 +109,7 @@ import { ContentMenuComponent } from './content/content-menu/content-menu.compon
     OverlayModule,
     PortalModule,
     ScrollingModule,
-    MatSelectModule,
-    FontAwesomeModule
+    FontAwesomeModule,
   ],
   providers: [],
   bootstrap: [AppComponent],
