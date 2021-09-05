@@ -1,21 +1,42 @@
 
-<div fxLayout="column" class="outerlayout">
-    <div fxFill="10" class="headding">  
-      <div fxLayout="row" fxLayoutAlign="start center"  class="image-icon"> 
+<div fxLayout="column" fxFill class="outerlayout">
+    <div fxLayout="row" class="headding" fxFlill="10">  
+      <div fxLayout="row" fxFlill="10" fxLayoutAlign="start center"  class="image-icon"> 
           <button mat-stroked-button>
               <img src="assets/img/ipl-logo.png" height="50px" width="150px">
           </button>
       </div>
-      <div class="filters" fxLayout="row" fxLayoutAlign="end center">
+      <div class="filters" FxFill fxLayout="row" fxLayoutAlign="end centers">
+
           <div class="seasons filter">
             <mat-form-field appearance="fill">
-              <mat-label>select a season</mat-label>
-               <mat-select >     
-                    <mat-option *ngFor="let sea of Seasons" value="sea.value">{{sea.viewValue}}</mat-option>
+              <mat-label>Select a Season</mat-label>
+              <mat-select>
+                <mat-option>None</mat-option>
+                <mat-option *ngFor="let sea of Season" [value]="sea">{{sea}}</mat-option>
               </mat-select>
             </mat-form-field>
           </div>
 
+          <div class="Team filter">
+            <mat-form-field appearance="fill">
+              <mat-label>Filter by Team</mat-label>
+              <mat-select>
+                <mat-option>None</mat-option>
+                <mat-option *ngFor="let tea of Team" [value]="tea">{{tea}}</mat-option>
+              </mat-select>
+            </mat-form-field>
+          </div>
+
+          <div class="Player filter">
+            <mat-form-field appearance="fill">
+              <mat-label>Filter by Player</mat-label>
+              <mat-select>
+                <mat-option>None</mat-option>
+                <mat-option *ngFor="let pla of Player" [value]="pla">{{pla}}</mat-option>
+              </mat-select>
+            </mat-form-field>
+          </div>
       </div>
     </div>
 </div>

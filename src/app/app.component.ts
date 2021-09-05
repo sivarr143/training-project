@@ -1,10 +1,4 @@
-import { ValueConverter } from '@angular/compiler/src/render3/view/template';
 import { Component } from '@angular/core';
-
-interface seas {
-  value: string;
-  viewValue: string;
-}
 
 
 @Component({
@@ -13,6 +7,15 @@ interface seas {
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  Seasons: seas[] = [{value:'2021 Season',viewValue: '2021 Season'},{value:'2020 Season',viewValue: '2020 Season'},{value:'2019 Season',viewValue: '2018 Season'}];
-  
+  Season: string[] = [
+    '2021 Season','2020 Season','2019 Season','2018 Season'
+  ];
+
+  Team: string[]=[
+    'Royal Challengers Bangalore','Chennai Super Kings','Mumbai Indians','Kolkata Knight Riders','Sunrisers Hyderabad'
+  ];
+
+  Player: string[]=[
+    'MS Dhoni','Robin Uthappa','N Jagadeesan','Ambati Rayudu',
+  ];
 }

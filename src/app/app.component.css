@@ -8,5 +8,23 @@
     background-color: #cfe2f3;
 }
 
+.headding{
+    position: absolute;
+    border: solid 2px black;
+    width: 100%;
+}
+
 .image-icon{
+    width: fit-content;
+    left: 10px;
+    border: solid 2px black
+}
+
+.filters{
+    position: absolute;
+    left: 50%;
+    bottom: 0%;
+    height: 100%;
+    background-color: white;
+    border: transparent 2px;
 }

@@ -53,6 +53,7 @@ import { MenuComponent } from './menu/menu.component';
 import { ContentComponent } from './content/content.component';
 import { ContentMenuComponent } from './content/content-menu/content-menu.component';
 import { FormsModule } from '@angular/forms';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [
@@ -112,6 +113,7 @@ import { FormsModule } from '@angular/forms';
     ScrollingModule,
     FontAwesomeModule,
     FormsModule,
+    BrowserAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent],
