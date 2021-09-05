@@ -10,15 +10,12 @@
           <div class="seasons filter">
             <mat-form-field appearance="fill">
               <mat-label>select a season</mat-label>
-               <mat-select [(value)]="Season">     
-                    <mat-option>None</mat-option>
-                    <mat-option value="1">Option 1</mat-option>
-                    <mat-option value="2">Option 2</mat-option>
-                    <mat-option value="3">Option 3</mat-option>
+               <mat-select >     
+                    <mat-option *ngFor="let sea of Seasons" value="sea.value">{{sea.viewValue}}</mat-option>
               </mat-select>
             </mat-form-field>
           </div>
-          <p>You selected: {{Season}}</p>
+
       </div>
     </div>
 </div>

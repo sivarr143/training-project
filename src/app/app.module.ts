@@ -52,6 +52,7 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { MenuComponent } from './menu/menu.component';
 import { ContentComponent } from './content/content.component';
 import { ContentMenuComponent } from './content/content-menu/content-menu.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -110,6 +111,7 @@ import { ContentMenuComponent } from './content/content-menu/content-menu.compon
     PortalModule,
     ScrollingModule,
     FontAwesomeModule,
+    FormsModule,
   ],
   providers: [],
   bootstrap: [AppComponent],
