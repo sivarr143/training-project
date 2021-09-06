@@ -42,7 +42,7 @@
 }
 
 .side-menu{
-    position: relative;
+    position: absolute;
     top: 0%;
     width: 15%;
     height: 100%;
@@ -50,10 +50,17 @@
 }
 
 .table-chart{
-    position: relative;
-    
+    position: inherit;
     left: 15%;
     width: 85.2%;
     height: 10%;
     border:solid 2px black;
+}
+
+.main-content{
+    position: relative;
+    left: 15%;
+    width: 85.2%;
+    height: 90%;
+    border: solid 2px black;
 }
