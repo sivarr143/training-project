@@ -1,1 +1,7 @@
-<p>menu works!</p>
+<mat-selection-list [multiple]="false">
+    <mat-list-option *ngFor="let ml of menulist" [value]="ml">
+      {{ml}}
+    </mat-list-option>
+  </mat-selection-list>
+  
+

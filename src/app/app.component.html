@@ -1,7 +1,7 @@
 
-<div fxLayout="column" fxFill class="outerlayout">
-    <div fxLayout="row" class="headding" fxFlill="10">  
-      <div fxLayout="row" fxFlill="10" fxLayoutAlign="start center"  class="image-icon"> 
+<div fxLayout="column" class="outerlayout">
+    <div fxLayout="row" class="headding">  
+      <div fxLayout="row"  fxLayoutAlign="start center"  class="image-icon"> 
           <button mat-stroked-button>
               <img src="assets/img/ipl-logo.png" height="50px" width="150px">
           </button>
@@ -39,4 +39,13 @@
           </div>
       </div>
     </div>
+
+    <div fxLayout="column" class="content">
+                  <div fxLayout="column" fxLayoutAlign="none start" class="side-menu">
+                      <app-menu></app-menu>
+                  </div>
+                  <div fxLayout="row" fxLayoutAlign="center end" class="table-chart">
+                    <app-content-headder></app-content-headder>
+                  </div>
+  </div>
 </div>

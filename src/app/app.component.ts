@@ -7,6 +7,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
+  title='training';
   Season: string[] = [
     '2021 Season','2020 Season','2019 Season','2018 Season'
   ];
