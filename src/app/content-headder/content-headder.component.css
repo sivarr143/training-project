@@ -1,5 +1,6 @@
 .content-headder{
     position:absolute;
-    left: 10%;
-    border: solid 10px black;
+    height: 50%;
+    width: 50%;
+    border: solid 5px black;
 }

@@ -5,14 +5,15 @@
 
 
 .outerlayout{
+    position: relative;
     background-color: #cfe2f3;
     height: 100%;
     width: 100%;
 }
 
 .headding{
-    position: absolute;
-    width: 98%;
+    position: relative;
+    width: 100%;
     height: fit-content;
     border: solid 2px black;
 }
@@ -24,8 +25,8 @@
 }
 
 .filters{
-    position: absolute;
-    left: 35%;
+    position: relative;
+    left: 40%;
     bottom: 0%;
     height: 100%;
     background-color: white;
@@ -33,15 +34,15 @@
 }
 
 .content{
-    position: absolute;
-    top: 9%;
-    height: 92%;
-    width: 98%;
+    position: relative;
+    top: 0%;
+    height: 100%;
+    width: 100%;
     border:solid 2px black;
 }
 
 .side-menu{
-    position: absolute;
+    position: relative;
     top: 0%;
     width: 15%;
     height: 100%;
@@ -49,9 +50,10 @@
 }
 
 .table-chart{
-    position: absolute;
+    position: relative;
+    
     left: 15%;
-    width: 85.3%;
-    height: 7%;
+    width: 85.2%;
+    height: 10%;
     border:solid 2px black;
 }
