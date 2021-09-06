@@ -1,11 +1,13 @@
 
 <div fxLayout="column" class="outerlayout">
+
     <div fxLayout="row" class="headding">  
       <div fxLayout="row"  fxLayoutAlign="start center"  class="image-icon"> 
           <button mat-stroked-button>
               <img src="assets/img/ipl-logo.png" height="50px" width="150px">
           </button>
       </div>
+
       <div class="filters" FxFill fxLayout="row" fxLayoutAlign="end centers">
 
           <div class="seasons filter">
@@ -41,11 +43,13 @@
     </div>
 
     <div fxLayout="column" class="content">
+
                   <div fxLayout="column" fxLayoutAlign="none start" class="side-menu">
                       <app-menu></app-menu>
                   </div>
-                  <div fxLayout="row" fxLayoutAlign="start center"  class="table-chart">
+                  <div fxLayout="row" fxLayoutAlign="center center"  class="table-chart">
                       <app-content-headder></app-content-headder>
+                      
                   </div>
                   <div fxLayout="row" fxLayoutAlign="center center" class="main-content">
                       <app-content></app-content>

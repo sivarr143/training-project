@@ -1,0 +1,14 @@
+.content-headder{
+    position: relative;
+    left: 30%;
+    width: 100%;
+    height: 100%;
+    border: solid 20px black;
+    
+}
+
+.example-button-container {
+    display: flex;
+    justify-content: center;
+    width: 120px;
+  }
