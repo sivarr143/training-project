@@ -55,6 +55,7 @@ import { ContentMenuComponent } from './content/content-menu/content-menu.compon
 import { FormsModule } from '@angular/forms';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import{ContentHeadderComponent} from'./content-headder/content-headder.component';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -116,6 +117,7 @@ import{ContentHeadderComponent} from'./content-headder/content-headder.component
     FontAwesomeModule,
     FormsModule,
     BrowserAnimationsModule,
+    HttpClientModule,
   ],
   providers: [],
   bootstrap: [AppComponent],

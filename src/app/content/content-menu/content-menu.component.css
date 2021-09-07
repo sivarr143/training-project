@@ -1,0 +1,9 @@
+.buttons{
+    display: table-cell;
+}
+
+button{
+    display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
