@@ -54,13 +54,15 @@ import { ContentComponent } from './content/content.component';
 import { ContentMenuComponent } from './content/content-menu/content-menu.component';
 import { FormsModule } from '@angular/forms';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import{ContentHeadderComponent} from'./content-headder/content-headder.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     MenuComponent,
     ContentComponent,
-    ContentMenuComponent
+    ContentMenuComponent,
+    ContentHeadderComponent
   ],
   imports: [
     BrowserModule,
@@ -113,7 +115,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     ScrollingModule,
     FontAwesomeModule,
     FormsModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
   ],
   providers: [],
   bootstrap: [AppComponent],

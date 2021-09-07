@@ -1,11 +1,9 @@
 <div fxLayout="column" class="outerlayout">
 
   <div fxLayout="row" class="headding">
-    <div fxLayout="row" fxLayoutAlign="start center" class="image-icon">
-      <button mat-stroked-button>
-        <img src="assets/img/ipl-logo.png" height="50px" width="150px">
-      </button>
-    </div>
+    <button mat-stroked-button>
+      <img src="assets/img/ipl-logo.png" height="50px" width="150px">
+    </button>
 
     <div class="filters" FxFill fxLayout="row" fxLayoutAlign="end centers">
 
@@ -41,10 +39,13 @@
     </div>
   </div>
 
+  <mat-divider></mat-divider>
   <div fxLayout="row" fxFill class="content">
     <app-menu></app-menu>
-    <div fxLayout="column" class="table-chart">
+    <mat-divider [vertical]="true"></mat-divider>
+    <div fxLayout="column" fxFlex class="table-chart">
       <app-content-headder></app-content-headder>
+      <mat-divider></mat-divider>
       <app-content></app-content>
     </div>
   </div>
