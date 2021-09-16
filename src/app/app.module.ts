@@ -56,6 +56,8 @@ import { FormsModule } from '@angular/forms';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import{ContentHeadderComponent} from'./content-headder/content-headder.component';
 import { HttpClientModule } from '@angular/common/http';
+import { SelectedValuesService } from './services/selected-values.service';
+import { TesthelloworldService } from './services/testhelloworld.service';
 
 @NgModule({
   declarations: [
@@ -119,7 +121,7 @@ import { HttpClientModule } from '@angular/common/http';
     BrowserAnimationsModule,
     HttpClientModule,
   ],
-  providers: [],
+  providers: [SelectedValuesService, TesthelloworldService],
   bootstrap: [AppComponent],
   schemas: [
     CUSTOM_ELEMENTS_SCHEMA,
