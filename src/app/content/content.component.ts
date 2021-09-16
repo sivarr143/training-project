@@ -15,7 +15,13 @@ import { TesthelloworldServiceService } from '../services/testhelloworld-service
 })
 export class ContentComponent implements OnInit {
 
-  result : Match[]=this.backend.getdata().subscribe(res => console.log(res));
+  sample : any[]=[];
+
+  result : Match[]=this.backend.getdata().subscribe(res => {
+    if(this.sel.menuoptions !== undefined && this.sel.menuoptions === 'matchList'){
+      this.sample.push(res);
+    }
+  });
 
   displayedColumns: string[] = ['position', 'name', 'weight', 'symbol'];
   dataSource = this.result;

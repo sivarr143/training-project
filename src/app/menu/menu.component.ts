@@ -8,7 +8,7 @@ import { SelectedValuesService } from '../services/selected-values.service';
 })
 export class MenuComponent implements OnInit {
   selected = '';
-  menulist: string[]=['helloWorld','matchList','topScorers','topBowlers','Most Fours (Innings)','Most Sixes','Most Sixes (Innings)'];
+  menulist: string[]=['matchList','topScorers','topBowlers'];
 
   constructor(private sel : SelectedValuesService) { }
 

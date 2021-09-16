@@ -16,4 +16,22 @@ export interface Match {
     method : string;
     umpireOne : string;
     umpireTwo : string;
+    match : Match;
+    inning : number;
+    over : number;
+    ball: number;
+    batsman : string;
+    nonStriker : string;
+    bowler : string;
+    batsmanRuns : number;
+    extraRuns : number;
+    totalRuns : number;
+    nonBoundary : any;
+    wicket : any;
+    dismissalKind : string;
+    playerDismissed : string;
+    fielder : string;
+    extrasType : string;
+    battingTeam : string;
+    bowlingTeam : string;
 }
