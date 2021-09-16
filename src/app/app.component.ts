@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-
+import { SelectedValuesService } from './services/selected-values.service'
 
 
 @Component({
@@ -8,21 +8,25 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  
-  title='training';
+  title = 'training';
   Season: number[] = [
-    2020,2019,2018,2017,2016
+    2020, 2019, 2018, 2017, 2016
   ];
 
-  Team: string[]=[
-    'Royal Challengers Bangalore','Chennai Super Kings','Mumbai Indians','Kolkata Knight Riders','Sunrisers Hyderabad'
+  Team: string[] = [
+    'Royal Challengers Bangalore', 'Chennai Super Kings', 'Mumbai Indians', 'Kolkata Knight Riders', 'Sunrisers Hyderabad'
   ];
 
-  Player: string[]=[
-    'MS Dhoni','Robin Uthappa','N Jagadeesan','Ambati Rayudu',
+  Player: string[] = [
+    'MS Dhoni', 'Robin Uthappa', 'N Jagadeesan', 'Ambati Rayudu',
   ];
 
-  data(){
-    
+  constructor(private sel : SelectedValuesService) {}
+
+  seasondata($event: any) {
+    if ($event.value !== undefined) {
+      this.sel.season = $event.value;
+      console.log(this.sel.season);
+    }
   }
 }
