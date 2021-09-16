@@ -8,8 +8,8 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title='training';
-  Season: string[] = [
-    '2021 Season','2020 Season','2019 Season','2018 Season'
+  Season: number[] = [
+    2020,2019,2018,2017,2016
   ];
 
   Team: string[]=[

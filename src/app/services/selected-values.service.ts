@@ -4,6 +4,9 @@ import { Injectable } from '@angular/core';
   providedIn: 'root'
 })
 export class SelectedValuesService {
+  season : any;
+  menuoptions : any;
+  contentselect : any;
 
   constructor() { }
 }
