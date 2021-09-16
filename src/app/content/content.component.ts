@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { SelectedValuesService } from '../services/selected-values.service';
+import { TesthelloworldServiceService } from '../services/testhelloworld-service.service';
 
 export interface PeriodicElement {
   name: string;
@@ -31,9 +33,11 @@ export class ContentComponent implements OnInit {
   displayedColumns: string[] = ['position', 'name', 'weight', 'symbol'];
   dataSource = ELEMENT_DATA;
 
-  constructor() { }
+  constructor(private backend : TesthelloworldServiceService,private sel : SelectedValuesService) { }
 
-  ngOnInit(): void {
+  ngOnInit(){
+
+    
   }
 
 }

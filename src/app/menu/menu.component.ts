@@ -8,7 +8,7 @@ import { SelectedValuesService } from '../services/selected-values.service';
 })
 export class MenuComponent implements OnInit {
   selected = '';
-  menulist: string[]=['Batting','Most Runs','Most Runs (Over)','Most Fours','Most Fours (Innings)','Most Sixes','Most Sixes (Innings)'];
+  menulist: string[]=['helloWorld','matchList','topScorers','topBowlers','Most Fours (Innings)','Most Sixes','Most Sixes (Innings)'];
 
   constructor(private sel : SelectedValuesService) { }
 
@@ -18,7 +18,8 @@ export class MenuComponent implements OnInit {
   onchange($event : any){
     if(this.sel.season !== undefined)
     {
-    console.log($event.source._value[0]);
+      this.sel.menuoptions = $event.source._value[0];
+      console.log(this.sel.menuoptions);
     }
     else
     {
