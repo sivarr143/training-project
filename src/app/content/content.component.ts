@@ -35,9 +35,6 @@ export class ContentComponent implements OnInit {
 
   constructor(private backend : TesthelloworldServiceService,private sel : SelectedValuesService) { }
 
-  ngOnInit(){
-
-    
-  }
+  ngOnInit(){}
 
 }
