@@ -14,4 +14,10 @@ export class MenuComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  onchange($event : any){
+
+    console.log($event.source._value[0]);
+
+  }
+
 }

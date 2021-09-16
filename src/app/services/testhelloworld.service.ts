@@ -13,4 +13,6 @@ export class TesthelloworldService {
   getdata(){
     return this.http.get<any>("http://localhost:7777/helloWorld",{responseType: 'text' as 'json'});
   }
+
+  
 }
