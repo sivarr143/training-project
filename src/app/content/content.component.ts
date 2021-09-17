@@ -19,14 +19,16 @@ export class ContentComponent implements OnInit {
 
   result : Match[]=this.backend.getdata().subscribe(res => {
     if(this.sel.menuoptions !== undefined && this.sel.menuoptions === 'matchList'){
-      this.sample.push(res);
+      this.sample.push(res);;
     }
   });
 
   displayedColumns: string[] = ['position', 'name', 'weight', 'symbol'];
   dataSource = this.result;
 
-  constructor(private backend : TesthelloworldServiceService,private sel : SelectedValuesService) { }
+  constructor(private backend : TesthelloworldServiceService,private sel : SelectedValuesService) { 
+    
+  }
 
   ngOnInit(){}
 
